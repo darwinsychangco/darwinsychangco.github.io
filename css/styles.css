@@ -1,0 +1,22 @@
+body {
+  background-color: #e7e7de;
+  color: #11698e;
+  margin: 10px;
+}
+
+img {
+  margin: 10px 10px 0px 0px;
+}
+
+.about_me {
+  float: none;
+  display: inline-block;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: thick;
+  width: 30px;
+}
