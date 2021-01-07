@@ -1,16 +1,23 @@
 body {
-  background-color: #e7e7de;
-  color: #11698e;
+  background-color: #fcf8ec;
   margin: 10px;
 }
 
 img {
-  margin: 10px 10px 0px 0px;
+  margin: 10px 10px 0 0;
 }
 
 .about_me {
   float: none;
   display: inline-block;
+}
+
+h1 {
+  color: #456268;
+}
+
+h3 {
+  color: #79a3b1;
 }
 
 hr {
