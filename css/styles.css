@@ -3,15 +3,6 @@ body {
   margin: 10px;
 }
 
-img {
-  margin: 10px 10px 0 0;
-}
-
-.about_me {
-  float: none;
-  display: inline-block;
-}
-
 h1 {
   color: #456268;
 }
