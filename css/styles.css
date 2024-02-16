@@ -16,5 +16,21 @@ hr {
   border-top-style: dotted;
   border-color: grey;
   border-width: thick;
+  margin: auto;
   width: 30px;
+}
+
+.education {
+  margin: auto;
+  width: 50%;
+}
+
+.experience {
+  margin: auto;
+  width: 50%;
+}
+
+.skill {
+  margin: auto;
+  width: 50%;
 }
