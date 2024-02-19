@@ -26,17 +26,18 @@ hr {
   background-image: url('../images/profile_bg.png');
 }
 
+.about-me {
+	background-color: azure;
+}
+
 .education {
-  margin: auto;
-  width: 50%;
+  background-color: azure;
 }
 
 .experience {
-  margin: auto;
-  width: 50%;
+  background-color: azure;
 }
 
 .skill {
-  margin: auto;
-  width: 50%;
+  background-color: azure;
 }
