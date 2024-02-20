@@ -42,6 +42,20 @@ hr {
   background-color: azure;
 }
 
+#snow-dev-yt-feed {
+	background-color: azure;
+}
+
+.snow-dev-list-link {
+	color: darkslategray;
+	font-size: .8em;
+	text-decoration: none;
+}
+
+.snow-dev-list-link:hover {
+	text-decoration: underline;
+}
+
 .footer-link {
 	text-decoration: none;
 }
