@@ -41,3 +41,7 @@ hr {
 .skill {
   background-color: azure;
 }
+
+.footer-link {
+	text-decoration: none;
+}
