@@ -1,7 +1,7 @@
-const channelRSSURL = "https://www.youtube.com/feeds/videos.xml?channel_id=UCdXorgCT87YlFRN9n8oJ7_A";
-const reqURL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(channelRSSURL)}`;
+const feedURL = "https://www.servicenow.com/community/s/cgfwn76974/rss/board?board.id=developer-advocate-blog";
+const reqURL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedURL)}`;
 
-async function loadYouTubeFeed() {
+async function loadBlogFeed() {
   const targetElement = document.getElementById("snow-dev-yt-feed");
 
   if (!targetElement) {
@@ -24,12 +24,15 @@ async function loadYouTubeFeed() {
     const items = Array.isArray(data.items) ? data.items : [];
 
     if (!items.length) {
-      targetElement.innerHTML = "<p>No videos are available right now.</p>";
+      targetElement.innerHTML = `
+        <h3>ServiceNow Developer Advocate Blog</h3>
+        <p>No articles are available right now.</p>
+      `;
       return;
     }
 
     let html = `
-      <h3>ServiceNow Dev Program Youtube Videos</h3>
+      <h3>ServiceNow Developer Advocate Blog</h3>
       <ul class="list-unstyled snow-dev-list">
     `;
 
@@ -46,12 +49,12 @@ async function loadYouTubeFeed() {
     html += "</ul>";
     targetElement.innerHTML = html;
   } catch (error) {
-    console.error("Unable to load YouTube feed.", error);
+    console.error("Unable to load ServiceNow blog feed.", error);
     targetElement.innerHTML = `
-      <h3>ServiceNow Dev Program Youtube Videos</h3>
-      <p>The video feed could not be loaded right now.</p>
+      <h3>ServiceNow Developer Advocate Blog</h3>
+      <p>The feed could not be loaded right now.</p>
     `;
   }
 }
 
-loadYouTubeFeed();
+loadBlogFeed();
