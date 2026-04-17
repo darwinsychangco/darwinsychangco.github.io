@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact me</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Contact me</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+  <body>
+    <main class="simple-page">
+      <section class="simple-card">
+        <p class="page-eyebrow">Contact</p>
+        <h1 class="page-title">My Contact Details</h1>
+        <p class="page-lead">Reach out for ServiceNow architecture, automation work, or collaboration opportunities.</p>
 
-<body>
-  <h1>My Contact Details</h1>
-  <p>Email: <a href="mailto:darwinsychangco@famsyinc.com?subject=feedback">email me</a>
-    <br>
-    Phone: (847)-915-2522
-  </p>
-  <hr>
-  <form class="" action="mailto:darwinsychangco@famsyinc.com?subject=feedback" method="post" enctype="text/plain">
-    <label for="">Your Name:</label>
-    <input type="text" name="yourName" value="">
-    <br>
-    <label for="">Your Email:</label>
-    <input type="email" name="yourEmail" value="">
-    <br>
-    <label for="">Your Message:</label>
-    <br>
-    <textarea name="yourMessage" rows="10" cols="30"></textarea>
-    <input type="submit" name="">
-  </form>
-</body>
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a class="contact-value" href="mailto:darwinsychangco@famsyinc.com?subject=feedback">darwinsychangco@famsyinc.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">(847) 915-2522</span>
+          </div>
+        </div>
 
+        <form class="contact-form" action="mailto:darwinsychangco@famsyinc.com?subject=feedback" method="post" enctype="text/plain">
+          <div class="form-row">
+            <label class="form-label" for="yourName">Your Name</label>
+            <input class="form-input" id="yourName" type="text" name="yourName" placeholder="Jane Smith" />
+          </div>
+
+          <div class="form-row">
+            <label class="form-label" for="yourEmail">Your Email</label>
+            <input class="form-input" id="yourEmail" type="email" name="yourEmail" placeholder="jane@example.com" />
+          </div>
+
+          <div class="form-row">
+            <label class="form-label" for="yourMessage">Your Message</label>
+            <textarea class="form-textarea" id="yourMessage" name="yourMessage" placeholder="How can we work together?"></textarea>
+          </div>
+
+          <input class="pill-link form-submit" type="submit" value="Send Message" />
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
